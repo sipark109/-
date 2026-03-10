@@ -1,0 +1,15 @@
+#include<string.h>
+#pragma warning(disable:4996)
+int main() {
+	char id[51];
+	fgets(id, sizeof(id), stdin);
+	size_t len= strlen(id);
+	if (len > 0 && id[len - 1] == '\n') {
+		id[len - 1] = '\0';
+	}
+	printf("%s??!\n", id);
+
+
+
+	return 0;
+}
